@@ -38,12 +38,12 @@ public class DataGenerator {
 						(new Activity("Research", 412, Boolean.FALSE,  LocalDate.of(2017, 9, 9) ))),
 				Boolean.FALSE, 1 , 999.9));
 		
-		listOfStudent.add(new Student("Champaq", Arrays.asList("Math", "Science"), 
+		listOfStudent.add(new Student("Champaqueue", Arrays.asList("Math", "Science"), 
 				Arrays.asList((new Activity("Running", 122, Boolean.TRUE,  LocalDate.of(2017, 1, 1) )) ,
 						(new Activity("Screaming", 5, Boolean.FALSE,  LocalDate.of(2017, 12, 7) )),
 						(new Activity("Lab", 7, Boolean.FALSE,  LocalDate.of(2017, 10, 11) )),
 						(new Activity("Research", 0, Boolean.FALSE,  LocalDate.of(2017, 9, 15) ))),
-				Boolean.FALSE, 74 , 453.5));
+				Boolean.FALSE, 794 , 453.5));
 
 		listOfStudent.add(new Student("Johannes", Arrays.asList( "Science", "Geology"), 
 				Arrays.asList((new Activity("Standing", 178, Boolean.TRUE,  LocalDate.of(2017, 1, 4) )) ,
