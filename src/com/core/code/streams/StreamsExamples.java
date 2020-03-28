@@ -3,6 +3,7 @@ package com.core.code.streams;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -16,10 +17,11 @@ public class StreamsExamples {
 		
 		
 		Predicate<Student> predicate = (s) -> s.getCurrentScore() > 700;
+		Consumer<Student> printStudent =  System.out::println;
 		
 		Map<Integer, String> mapOStudents = listOfStudents.stream().
-				peek(s ->System.out.println( s.toString()) ).filter(predicate)
-				.peek(s -> System.out.println(s.toString()) )
+				peek(printStudent).filter(predicate)
+				.peek(printStudent)
 				.collect(Collectors.toMap(Student::getId, Student::getName));
 		
 		BiConsumer<Integer, String> biCon = (id,name) -> {System.out.println(id +":"+ name);}; 	
@@ -31,6 +33,8 @@ public class StreamsExamples {
 		List<String> desiredList =listOfStudents.stream().map(function).collect(Collectors.toList());
 		
 		desiredList.forEach(s -> System.out.println(s));
+		
+		
 		
 		
 		
