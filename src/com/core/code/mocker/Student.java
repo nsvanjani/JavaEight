@@ -10,6 +10,10 @@ public class Student {
 	private Boolean isXStudent;
 	private Integer id;
 	private Double currentScore;
+	
+	public Student(){
+		
+	}
 	public String getName() {
 		return name;
 	}
