@@ -12,6 +12,9 @@ import com.core.code.mocker.Student;
 
 public class StreamMApExample {
 	public static void main(String[] args) {
+		// code notes: after using the map function we need to always collect the values
+		// for one value, like for getting one string value we need to use the list.get(0)
+		// for avoiding the null pointer in the get(0) we must use the filter method previously 
 		List<Student> studentList = DataGenerator.getListOfStudent();
 		Predicate<Activity> sportActivity = (activity) -> activity.getIsSport();
 		Predicate<Student> studentWithSportActivity = (student) -> {
@@ -24,8 +27,11 @@ public class StreamMApExample {
 					collect(Collectors.toList()).get(0);
 
 		};
+//		this code finds the student with 
+//		sports activity and prints the name of student with which is the sports activity
+		// start reading the code from here .. 
 		studentList.stream().
 				filter(studentWithSportActivity).
-				map(mapper).collect(Collectors.toList()).forEach(System.out::println);;
+				map(mapper).collect(Collectors.toList()).forEach(System.out::println);
 	}
 }
