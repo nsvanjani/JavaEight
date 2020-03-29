@@ -10,7 +10,19 @@ public class Student {
 	private Boolean isXStudent;
 	private Integer id;
 	private Double currentScore;
+	private Integer notebooks;
 	
+	public Student(String name, List<String> courses, List<Activity> activitiesList, Boolean isXStudent, Integer id,
+			Double currentScore, Integer notebooks) {
+		super();
+		this.name = name;
+		this.courses = courses;
+		this.activitiesList = activitiesList;
+		this.isXStudent = isXStudent;
+		this.id = id;
+		this.currentScore = currentScore;
+		this.notebooks = notebooks;
+	}
 	public Student(){
 		
 	}
@@ -59,6 +71,12 @@ public class Student {
 	}
 	public void setCurrentScore(Double currentScore) {
 		this.currentScore = currentScore;
+	}
+	public Integer getNotebooks() {
+		return notebooks;
+	}
+	public void setNotebooks(Integer notebooks) {
+		this.notebooks = notebooks;
 	}
 	@Override
 	public String toString() {
