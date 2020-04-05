@@ -14,7 +14,7 @@ public class JoiningOperationsExample {
 		System.out.println(str);
 		str = studentList.stream().
 				map(Student::getName).collect(Collectors.joining("~"));
-		System.out.println(str);
+		System.out.println(str);	
 		str = studentList.stream().
 				map(Student::getName).collect(Collectors.joining("~","prefix","suffix"));
 		System.out.println(str);
