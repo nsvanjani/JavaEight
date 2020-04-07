@@ -43,7 +43,7 @@ public class DataGenerator {
 						(new Activity("Screaming", 5, Boolean.FALSE,  LocalDate.of(2017, 12, 7) )),
 						(new Activity("Lab", 7, Boolean.FALSE,  LocalDate.of(2017, 10, 11) )),
 						(new Activity("Research", 0, Boolean.FALSE,  LocalDate.of(2017, 9, 15) ))),
-				Boolean.FALSE, 794 , 453.5,22));
+				Boolean.TRUE, 794 , 453.5,22));
 
 		listOfStudent.add(new Student("Johannes", Arrays.asList( "Science", "Geology"), 
 				Arrays.asList((new Activity("Standing", 178, Boolean.TRUE,  LocalDate.of(2017, 1, 4) )) ,
